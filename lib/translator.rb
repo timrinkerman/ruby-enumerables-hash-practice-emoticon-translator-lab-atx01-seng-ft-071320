@@ -13,17 +13,12 @@ def load_library(file_path)
 #access the array #create an empty hash for the new info to go to
 
 emoticons_hash = YAML.load_file("lib/emoticons.yml")
-final_hash = {
+final_hash = {}
 
  #access a key of an emotion 
-  new_key = emo
-
-
-
-other_key = emoticons_hash[:japanese]
-  
-  emoticons_hash.each_with_object({}) do |(emotion_word, faces), final_hash| 
-        new_key = faces[0]
+  emoticons_hash.each do |emotion_word, faces|
+    final_hash[emotion_word] ||= {}
+        final_hash[name] = faces[0]
         other_key = faces[1]
         
    if !final_hash[emotion_word]
