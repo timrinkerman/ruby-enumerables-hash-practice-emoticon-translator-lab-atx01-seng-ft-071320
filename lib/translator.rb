@@ -38,7 +38,7 @@ def get_english_meaning(file_path, emoticon)
     translations.each do |language, face|
       #binding.pry
       #if face is equal to the emoticon argument return language 
-      if face == emoticon
+      if emoticon == face 
         return word
     else 
       return "Sorry, that emoticon was not found"
