@@ -24,7 +24,8 @@ final_hash #return new hash
 end
 
 
-#
+#same logic as the english meaning method just return a #diffrent value as apposed to a key
+
 def get_japanese_emoticon(file_path, emoticon)
    library = load_library(file_path)
    library.map do |word, translations| 
@@ -37,7 +38,9 @@ end
 end
 
 
-#
+
+#if the emoticon is equal to the value of the translation send back the key(word)
+
 def get_english_meaning(file_path, emoticon)
   library = load_library(file_path)
   library.each do |word, translations|
