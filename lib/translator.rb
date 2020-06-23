@@ -17,7 +17,7 @@ final_hash = {}
 
  #access a key of an emotion 
   emoticons_hash.each do |emotion_word, faces|
-    final_hash[emotion_word] ||= {}
+    final_hash[emotion_word] = {}
         final_hash[emotion_word][:english] = faces[0]
         final_hash[emotion_word][:japanese] = faces[1]
         
