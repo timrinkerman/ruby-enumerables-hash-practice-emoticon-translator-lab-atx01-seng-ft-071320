@@ -36,11 +36,9 @@ def get_english_meaning(file_path, emoticon)
   library.each do |word, translations|
     #binding.pry
     if translations[:japanese] == emoticon
-      return word
+      word
     end
-    elsif !translations[:japanese] == emoticon
       p "Sorry, that emoticon was not found"
-    end
   end
 end
 
