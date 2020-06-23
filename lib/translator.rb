@@ -35,6 +35,7 @@ def get_english_meaning(file_path, emoticon)
   library = load_library("lib/emoticons.yml")
   library.each do |key, value|
     binding.pry
-  
+    if emoticon = value
+    return key  
 end
 end
