@@ -34,6 +34,9 @@ end
 def get_english_meaning(file_path, emoticon)
   library = load_library("lib/emoticons.yml")
   library.each do |key, value|
+    #binding.pry
+    value.each do |english, japanese|
     binding.pry
+end
 end
 end
