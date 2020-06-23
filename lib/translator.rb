@@ -37,8 +37,7 @@ def get_english_meaning(file_path, emoticon)
     #binding.pry
     if translations[:japanese] == emoticon
       return word
-    else 
-    if !translations[:japanese] == emoticon
+    elsif !translations[:japanese] == emoticon
       return "Sorry, that emoticon was not found"
     end
   end
