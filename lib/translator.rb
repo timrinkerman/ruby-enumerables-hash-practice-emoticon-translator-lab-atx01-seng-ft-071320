@@ -32,7 +32,8 @@ def get_japanese_emoticon(file_path, emoticon)
    library.map do |word, translations| 
      if translations[:english] == emoticon
       return translations[:japanese] 
-    else
+    end
+    
      return "Sorry, that emoticon was not found"
 
 end
