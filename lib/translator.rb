@@ -40,8 +40,7 @@ def get_english_meaning(file_path, emoticon)
       #if face is equal to the emoticon argument return language 
       if face == emoticon
         return word
-    elsif 
-        emoticon !== face
+    else 
       return "Sorry, that emoticon was not found"
     end
   end
