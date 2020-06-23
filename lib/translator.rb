@@ -2,13 +2,17 @@
 require "yaml"
 require "pry"
 
+
+#pre: a yaml file is listing emoticons
+#post: a hash has been modified where arrays of data have become the info for a new hash nested within the original 
+
 #finalHash = original hash << new_hash 
 
 #new_hash = :english => "value[0]",
 #           :japanese => "value[1]"
                         
 def load_library(file_path)
-#access the array #create an empty hash for the new info to go to
+
 emoticons_hash = YAML.load_file(file_path)
 
 final_hash = {}
@@ -25,6 +29,9 @@ end
 
 
 #same logic as the english meaning method just return a #diffrent value as apposed to a key
+
+#pre:given an argument of a emoticon (in english)
+#post: using the emoticon library access the japanese #version
 
 def get_japanese_emoticon(file_path, emoticon)
    library = load_library(file_path)
