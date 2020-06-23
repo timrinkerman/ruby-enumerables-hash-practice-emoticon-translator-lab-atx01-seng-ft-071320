@@ -39,7 +39,7 @@ def get_english_meaning(file_path, emoticon)
       #binding.pry
       #if face is equal to the emoticon argument return language 
       if face == emoticon
-        word
+        return word
     else
       p "Sorry, that emoticon was not found"
     end
