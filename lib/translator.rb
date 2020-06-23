@@ -36,3 +36,4 @@ def get_english_meaning(file_path, emoticon)
   library.each do |key, value|
     binding.pry
 end
+end
