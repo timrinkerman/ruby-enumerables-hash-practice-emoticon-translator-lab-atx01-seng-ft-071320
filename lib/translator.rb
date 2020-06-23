@@ -34,8 +34,7 @@ def get_japanese_emoticon(file_path, emoticon)
       return translations[:japanese] 
     else
      return "Sorry, that emoticon was not found"
- 
- end 
+
 end
 end
 end
