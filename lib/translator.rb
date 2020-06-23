@@ -29,7 +29,7 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
    library = load_library(file_path)
-   library.each do |word, translations| 
+   library.map do |word, translations| 
      if translations[:english] == emoticon
        translations[:japanese] 
  end 
