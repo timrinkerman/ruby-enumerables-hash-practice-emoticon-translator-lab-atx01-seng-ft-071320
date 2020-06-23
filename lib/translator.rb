@@ -33,13 +33,13 @@ end
 
 def get_english_meaning(file_path, emoticon)
   library = load_library(file_path)
-  library.each do |key, value|
-    #binding.pry
-    value.each do |language, face|
+  library.each do |word, translations|
+    #binding
+    translations.each do |language, face|
       #binding.pry
       #if face is equal to the emoticon argument return language 
-      if emoticon = face
-        key[language][face] = emoticon
+      if face == emoticon
+        word
       end
   end
 end
