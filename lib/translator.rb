@@ -33,6 +33,8 @@ def get_japanese_emoticon(file_path, emoticon)
      if translations[:english] == emoticon
        return translations[:japanese] 
  end 
+if translations[:english] !== emoticon
+  return ""
 end
 end
 
